@@ -1,7 +1,3 @@
-Great choice! Here's the updated README file for your DishDash project:
-
----
-
 # DishDash
 
 DishDash is a web application designed to help users manage and share their favorite recipes. With DishDash, you can easily create, discover, and organize recipes from around the world, all in one convenient platform.
@@ -17,12 +13,11 @@ DishDash is a web application designed to help users manage and share their favo
 
 ## Technologies Used
 
-- **Backend:** Flask (Python)
-- **Frontend:** HTML, CSS, JavaScript
+- **Framework:** Django
+- **Frontend:** HTML, CSS, JavaScript (Django's built-in templating language)
 - **Database:** SQLite, PostgreSQL
-- **ORM:** SQLAlchemy
-- **Authentication:** Flask-Login
-- **Deployment:** Heroku
+- **Authentication:** Django's built-in authentication system
+- **Deployment:** Heroku, PythonAnywhere
 
 ## Setup Instructions
 
@@ -33,15 +28,13 @@ DishDash is a web application designed to help users manage and share their favo
    - On Windows: `venv\Scripts\activate`
    - On macOS and Linux: `source venv/bin/activate`
 5. Install the dependencies: `pip install -r requirements.txt`
-6. Set up the database:
-   - For SQLite: `flask db upgrade`
-   - For PostgreSQL: Set up your database credentials in the `.env` file and then run `flask db upgrade`
-7. Run the application: `flask run`
-8. Open your web browser and go to `http://localhost:5000` to access DishDash.
+6. Set up the database: `python manage.py migrate`
+7. Run the development server: `python manage.py runserver`
+8. Open your web browser and go to `http://localhost:8000` to access DishDash.
 
 ## Deployment
 
-DishDash is deployed on Heroku. You can access the live version of the application [here](https://dishdash.herokuapp.com/).
+DishDash can be deployed on platforms like Heroku or PythonAnywhere. Follow their respective documentation for deployment instructions.
 
 ## Contributing
 
@@ -59,4 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to customize this README file according to your project's specific details and requirements.
+Feel free to customize this README file according to your project's specific details and requirements. Django's powerful features and ecosystem should streamline the development process for your Recipe Management Web Application.
